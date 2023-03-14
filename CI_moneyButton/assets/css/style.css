@@ -1,0 +1,101 @@
+
+*{
+    margin:0;
+}
+
+.nav{
+    padding:10px;
+}
+
+.nav h3,p{
+    margin-left: 10px;
+}
+
+.nav form{
+    position:relative;
+    width:90px;
+    height: 20px;
+    left: 1000px;
+    bottom:40px;
+    padding: 10px;
+    background-color: red;
+    border: 3px solid black;
+}
+
+.row1{
+    display: inline-block;
+    text-align: center;
+    margin-left: 100px;
+    padding:50px;
+    border: 2px solid black;
+}
+
+.row2{
+    display: inline-block;
+    text-align: center;
+    margin-left: 100px;
+    padding:50px;
+    border: 2px solid black;
+}
+
+.row3{
+    display: inline-block;
+    text-align: center;
+    margin-left: 100px;
+    padding:50px;
+    border: 2px solid black;
+}
+
+.row4{
+    display: inline-block;
+    text-align: center;
+    margin-left: 100px;
+    padding:50px;
+    border: 2px solid black;
+}
+
+.row1 form input{
+    background-color: green;
+    color: white;
+}
+
+.row2 form input{
+    background-color: green;
+    color: white;
+}
+
+.row3 form input{
+    background-color: green;
+    color: white;
+}
+
+.row4 form input{
+    background-color: green;
+    color: white;
+}
+
+form input:disabled,
+form input[disabled]{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
+
+.dialog_box {
+    width:880px;
+    margin-left: 200px;
+    margin-top: 20px;
+    border: 2px solid black;
+}
+
+.red{
+    color: red;
+    width:800px;
+    margin-top: 20px;
+}
+
+.green{
+    color: green;
+    width:800px;
+    margin-top: 20px;
+}
