@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+}
+
+nav {
+    background-color: aqua;
+    width: 100%;
+    padding: 10px;
+}
+
+nav h1 {
+    display: inline-block;
+    margin-left: 40px;
+    font-size: 40px;
+}
+
+nav a {
+    color: black;
+    left: 920px;
+    font-size: 20px;
+    position: relative;
+    padding: 10px;
+}
+
+nav span {
+    position: relative;
+    left: 900px;
+}
+
+.content {
+    width: 800px;
+    margin-left: 270px;
+    margin-top: 50px;
+    font-size: 20px;
+    padding: 7px;
+}
+
+.content .break {
+    margin-top: 20px;
+}
+
+.reviews {
+    width: 800px;
+    margin-left: 270px;
+    margin-top: 50px;
+    font-size: 18px;
+    padding: 7px;
+}
+
+.reviews_replies {
+    width: 800px;
+    margin-left: 370px;
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 7px;
+}
+
+.wrapper {
+    margin-left: 500px;
+    margin-top: 100px;
+}
+
+.wrapper .form1 input{
+    text-align:center;
+    background-color: aqua;
+    margin-left: 10px;
+    color: black;
+}
+
+.wrapper .form2 {
+    margin-top: 100px;
+}
+
+.wrapper .form2 input{
+    text-align:center;
+    background-color: aqua;
+    margin-left: 10px;
+    color: black;
+    
+}
+
+textarea {
+    width: 790px;
+    height: 150px;
+}
+
+h3 {
+    margin-left: 280px;
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+form {
+    margin-left: 280px;
+}
+
+form input[type='submit'] {
+    margin-left: 700px;
+    margin-top: 5px;
+    display: block;
+    background-color: blue;
+    border-radius: 5px;
+    color: white;
+}
+
+.reviews {
+    margin-left: 270px;
+    margin-top: 20px;
+}
+
+.replies input[type='submit'] {
+    margin-left: 630px;
+    margin-top: 5px;
+    font-size: 18px;
+    display: block;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+}
+
+.replies {
+    margin-left: 380px;
+}
+
+.replies textarea {
+    width: 690px;
+    height: 150px;
+}

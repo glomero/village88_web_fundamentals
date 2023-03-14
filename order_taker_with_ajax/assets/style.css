@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h3{
+    margin-left: 100px;
+    margin-top: 30px;
+}
+div{
+    margin-left: 50px;
+    margin-top: 30px;
+    /* border: 2px solid black; */
+    /* display: inline-block; */
+}
+.orders{
+    display: inline-block;
+    border: 2px solid black;
+    padding: 5px;
+    font-size: 20px;
+    width: 200px;
+    height: 200px;
+}
+.orders h2{
+    text-align: center;
+}
+form{
+    background-color: rgb(146, 203, 12);
+    margin-top: 250px;
+    text-align: center;
+    height: 100px;
+}
+form #search{
+    margin-top: 15px;
+    padding: 5px;
+    color: rgb(161, 159, 159);
+    width: 900px;
+}
+form #btn{
+    background-color: green;
+    color: white;
+    box-shadow: 2px 2px black;
+    padding: 7px;
+}

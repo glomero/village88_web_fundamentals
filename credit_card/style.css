@@ -1,0 +1,13 @@
+table tr th,td{
+    text-align: center;
+    border: 1px solid black;
+}
+
+.wrapper{
+    margin-left: 200px;
+    
+}
+
+.bg-highlight{
+    background-color: lightgray;
+}

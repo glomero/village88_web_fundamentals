@@ -1,0 +1,27 @@
+body {
+	text-align: center;
+}
+.main {
+    border: 2px solid black;
+	display: inline-block;
+	font-size: 30px;
+	padding: 20px;
+    box-shadow: 3px 4px grey;
+}
+p {
+	font-size: 30px;
+	padding: 20px;
+}
+.main  .highlight {
+	color: black;
+	font-size: 60px;
+	margin: auto;
+	padding: 10px 0px;
+	width: 400px;
+    display:inline-block;
+}
+.seconds {
+    position: relative;
+    right: 120px;
+    bottom: 10px;
+}
