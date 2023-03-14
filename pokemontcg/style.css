@@ -1,0 +1,19 @@
+body * {
+	text-align: center;
+}
+
+img {
+	height: 300px;
+	width: 300px;
+}
+#pokemons {
+	width: 100%;
+	
+}
+.modal, #pokemon {
+	text-align: center;
+}
+
+.name {
+	text-transform: capitalize;
+}

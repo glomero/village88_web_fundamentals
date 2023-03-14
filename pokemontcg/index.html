@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pokemon TCG</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var html_str = "";
+            html_str += "<h2>Pokemons</h2>";
+            $.get("https://api.pokemontcg.io/v2/cards/", function (res){
+                    for (var i = 1; i <= 100; i++) { // getting the image data
+                        html_str += '<img type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" name='+ res.data[i].name +' types='+ res.data[i].types +' hp='+res.data[i].hp +' pre_evo='+res.data[i].evolvesFrom +' src=' + res.data[i].images.small +' alt="img">';                            
+                    }
+                    $("#pokemons").html(html_str);
+                }, "json");
+        
+        });
+        // onclick 
+        $(document).on("click", "img", function(){
+            var image = $(this).attr('src');
+            var name = $(this).attr('name');
+            var types = $(this).attr('types');
+            var hp = $(this).attr('hp');
+            var pre_evo = $(this).attr('pre_evo');
+            $('#img-modal').attr('src', image);
+            $('h5').text(name);
+            $('.types').text('Types: ' + types);
+            $('.hp').text('HP: ' + hp);
+            $('.pre_evo').text('Evolves from: ' + pre_evo)
+        });
+    </script>
+</head>
+
+<body>
+    <div id="pokemons">
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Name</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="img-modal" src="" alt="img">
+                    <p class="types"></p>
+                    <p class="hp"></p>
+                    <p class="pre_evo"></p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

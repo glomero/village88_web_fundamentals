@@ -1,0 +1,113 @@
+    *{
+        margin: 0;
+    }
+
+    h4 {
+        left: 500px;
+        top: 50px;
+        position: relative;
+    }
+
+    h5 {
+        right: 409px;
+        top: 50px;
+        position: relative;
+        display: inline-block;
+    }
+
+    .card_body {
+        width: 400px;
+        margin-left: 500px;
+        margin-top: 60px;
+        display: inline-block;
+    }
+
+    .card_body .btn {
+        position: relative;
+        left: 410px;
+        bottom: 55px;
+    }
+
+    ol {
+        margin-left: 500px;
+        margin-top: 55px;
+        display: block;
+    }
+
+    /* pagination position styling */
+    .pagination_section {
+        position: relative;
+        text-align: center;
+    }
+
+    /* pagination styling */
+    .pagination_section a {
+        color: black;
+        padding: 10px 18px;
+        text-decoration: none;
+    }
+
+    /* pagination hover effect on non-active */
+    .pagination_section a:hover:not(.active) {
+        background-color: #031F3B;
+        color: white;
+    }
+
+    /* pagination hover effect on active*/
+
+    a:nth-child(5) {
+        font-weight: bold;
+    }
+
+    a:nth-child(1) {
+        font-weight: bold;
+    }
+
+    a:nth-child(7) {
+        font-weight: bold;
+    }
+
+    .content {
+        margin: 50px;
+        padding: 15px;
+        width: 700px;
+        height: 200px;
+        border: 2px solid black;
+    }
+
+    .styled-table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        font-family: sans-serif;
+        min-width: 400px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .styled-table thead tr {
+        background-color: #009879;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .styled-table th,
+    .styled-table td {
+        padding: 12px 15px;
+    }
+
+    .styled-table tbody tr {
+        border-bottom: 1px solid #dddddd;
+    }
+    
+    .styled-table tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+    
+    .styled-table tbody tr:last-of-type {
+        border-bottom: 2px solid #009879;
+    }
+
+    .styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
